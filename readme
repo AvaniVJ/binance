@@ -1,0 +1,60 @@
+# Binance Spot Trading Bot
+
+A simple trading bot built in **Python** using the **Binance Testnet API**.
+
+## Features
+
+* Connects to Binance Testnet
+* Executes Market and Limit orders
+* Supports Buy and Sell actions
+* Tracks price and profit
+* Logs activity and errors
+
+## Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/AvaniVJ/binance.git
+cd binance
+```
+
+### 2. Create and activate virtual environment
+
+```bash
+python -m venv venv
+venv\Scripts\activate     # for Windows
+# source venv/bin/activate  # for Mac/Linux
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Create `.env` file
+
+
+'''
+API_KEY=your_api_key
+API_SECRET=your_api_secret
+SYMBOL=BTCUSDT
+TRADE_QUANTITY=0.001
+'''
+
+
+### 5. Run the bot
+
+```bash
+python a.py
+```
+
+## Logging
+
+All logs are stored in `spot_trading_bot.log`.
+
+## Author
+
+**Avani VJ**
+[GitHub Profile](https://github.com/AvaniVJ)
