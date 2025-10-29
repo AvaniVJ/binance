@@ -1,60 +1,70 @@
-# Binance Spot Trading Bot
+🪙 Binance Spot Trading Bot
 
-A simple trading bot built in **Python** using the **Binance Testnet API**.
+A simple yet extensible Python trading bot built on the Binance Spot Testnet API — perfect for demonstrating algorithmic trading logic, order handling, and error management.
 
-## Features
+🚀 Features
 
-* Connects to Binance Testnet
-* Executes Market and Limit orders
-* Supports Buy and Sell actions
-* Tracks price and profit
-* Logs activity and errors
+Connects to Binance Spot Testnet
 
-## Setup
+Executes Market and Limit orders
 
-### 1. Clone the repository
+Supports Buy and Sell actions
 
-```bash
+Tracks price, PnL, and balance
+
+Implements logging and error handling
+
+Optional auto strategy mode for demo trading
+
+⚙️ Setup Instructions
+1️⃣ Clone the repository
 git clone https://github.com/AvaniVJ/binance.git
 cd binance
-```
 
-### 2. Create and activate virtual environment
-
-```bash
+2️⃣ Create and activate a virtual environment
 python -m venv venv
-venv\Scripts\activate     # for Windows
-# source venv/bin/activate  # for Mac/Linux
-```
+venv\Scripts\activate     # Windows
+# source venv/bin/activate   # Mac/Linux
 
-### 3. Install dependencies
-
-```bash
+3️⃣ Install dependencies
 pip install -r requirements.txt
-```
 
-### 4. Create `.env` file
+4️⃣ Create a .env file
 
+In your project root, create a file named .env with the following content:
 
-'''
-API_KEY=your_api_key
-API_SECRET=your_api_secret
+BINANCE_API_KEY=your_api_key
+BINANCE_API_SECRET=your_api_secret
+BINANCE_TESTNET_URL=https://testnet.binance.vision
 SYMBOL=BTCUSDT
 TRADE_QUANTITY=0.001
-'''
 
-
-### 5. Run the bot
-
-```bash
+5️⃣ Run the bot
 python a.py
-```
 
-## Logging
+🧾 Logging
 
-All logs are stored in `spot_trading_bot.log`.
+All actions, orders, and errors are logged to:
 
-## Author
+futures_style_bot.log
 
-**Avani VJ**
-[GitHub Profile](https://github.com/AvaniVJ)
+
+To view logs live in VS Code:
+
+Open the file
+
+Right-click → “Follow Log” (or “Follow Output”)
+
+🧠 Notes
+
+The bot uses Binance Spot Testnet, not Futures.
+
+Make sure your API keys are from https://testnet.binance.vision
+.
+
+Ensure your account has Testnet funds before trading.
+
+👩‍💻 Author
+
+Avani VJ
+🔗 GitHub Profile
